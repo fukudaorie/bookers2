@@ -14,15 +14,15 @@
       
         <%= form_with model: @user do |f| %>
         <div class = "form-group">
-          <label for="user_name">Name</label><br />
+          <label>Name</label><br />
           <%= f.text_field :name, autofocus: true, id:"user_name" %>
         </div>
         <div class = "form-group">
-          <label for="user_image">Image</label><br />
+          <label>Image</label><br />
           <%= f.file_field :profile_image, accept: "image/*" %>  
         </div>
         <div class = "form-group">
-          <label for="user_introduction">Introduction</label><br />
+          <label>Introduction</label><br />
           <%= f.text_area :introduction, autofocus: true, id:"user" %>
         </div>
         <%= f.submit "Update User" %>
